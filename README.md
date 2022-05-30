@@ -2,6 +2,8 @@
 
 ![Uol -Test drawio](https://user-images.githubusercontent.com/105077314/171049097-c8d67f15-3b8e-4445-be53-33219c57af87.png)
 
+- Usei EC2 com a intenção de ajustar o ansible para instalação do Kubernetes + Rancher, formando um cluster IaaS na rede privada e outro cluster IaaS na rede pública, possibilitando a comunicação entre os cluster com uma Api Gateway.
+
 # CI/CD
 -Para o CI/CD utilizei o Actions do próprio Github:
 
