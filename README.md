@@ -47,5 +47,5 @@ Segue evidência do envio do alerta.
 - Como sugerido, se fizermos a atualização do Jinja2 para a versão 2.11.3, não teremos mais essa vulnerabilidade média em nosso ambiente.
 
 # OBSERVAÇÃO
-- Não utilizei toda a parte do Gitflow para tonar resumido o bate papo, utilizei apenas um branch (master) para ser mais dinâmico nas explicações, mesmo tendo em mente a importância de criarmos branches e aplicarmos a partide de pull requests (PRS) na branch master.
+- Não utilizei toda a parte do Gitflow para tornar resumido o bate papo, utilizei apenas um branch (master) para ser mais dinâmico nas explicações, mesmo tendo em mente a importância de criarmos branches e aplicarmos a partide de pull requests (PRS) na branch master.
 
