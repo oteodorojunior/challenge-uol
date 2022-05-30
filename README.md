@@ -2,10 +2,12 @@
 
 ![Uol -Test drawio](https://user-images.githubusercontent.com/105077314/171049097-c8d67f15-3b8e-4445-be53-33219c57af87.png)
 
-- Usei EC2 com a intenção de ajustar o ansible para instalação do Kubernetes + Rancher, formando um cluster IaaS na rede privada e outro cluster IaaS na rede pública, possibilitando a comunicação entre os cluster com uma Api Gateway.
+- Usei EC2 com a intenção de ajustar o ansible para instalação do Kubernetes + Rancher, formando um cluster IaaS na rede privada e outro cluster IaaS na rede pública, possibilitando a comunicação entre os clusters com uma Api Gateway.
+  - Cada host ficaria em uma AZ diferente atendendo ao requisito de H.A de uma aplicação/ambiente e o banco de dados multiAZ também.
+- Abortei a configuração com o ansible porque irei "arriscar" subir a infra toda enquanto estiver no tempo de entrevista com a equipe, e notei que iria tomar muito tempo apresentando o terraform, aws, monitorias, ci/cd e o ansible instalando tudo junto, abortei a utilização do ansible mas não abortei a infraestrutura pensada inicialmente mesmo sabendo que não é a infra mais "fácil" (PaaS, ECS ou EKS) de se manter.
 
 # CI/CD
--Para o CI/CD utilizei o Actions do próprio Github:
+- Para o CI/CD utilizei o Actions do próprio Github:
 
  https://github.com/oteodorojunior/challenge-uol/actions/runs/2411015026
 
@@ -49,3 +51,4 @@ Segue evidência do envio do alerta.
 # OBSERVAÇÃO
 - Não utilizei toda a parte do Gitflow para tornar resumido o bate papo, utilizei apenas um branch (master) para ser mais dinâmico nas explicações, mesmo tendo em mente a importância de criarmos branches e aplicarmos a partide de pull requests (PRS) na branch master.
 
+- Os endereços nos security groups estão abertos para internet (0.0.0.0/0) apenas por se tratar de um teste, com toda certeza em um ambiente empresarial isso não é uma boa prática.
