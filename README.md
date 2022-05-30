@@ -1,6 +1,15 @@
-# Arquitetura
+# ARQUITETURA
 
 ![Uol -Test drawio](https://user-images.githubusercontent.com/105077314/171049097-c8d67f15-3b8e-4445-be53-33219c57af87.png)
+
+# CI/CD
+-Para o CI/CD utilizei o Actions do próprio Github:
+
+ https://github.com/oteodorojunior/challenge-uol/actions/runs/2411015026
+
+- Procurei utilizar os steps de melhores práticas, última versão do ubuntu, checkout, setup do terraform e também se caso no terraform plan o status for 'FAILURE' o deploy não é realizado segue:
+
+https://github.com/oteodorojunior/challenge-uol/blob/master/.github/workflows/terraform.yml#L46
 
 # MONITORIA E MÉTRICAS
 - Para monitorias e métricas utilizo cloudwatch e zabbix digamos que como "backend" e o Grafana como "frontend".
