@@ -88,7 +88,7 @@ module "ec2-public-a" {
   infra_env              = "staging"
   instance_type          = "t2.micro"
   monitoring             = true
-  vpc_security_group_ids = ["sg-0127ecaa29e9498b6"]
+  vpc_security_group_ids = ["sg-021ad31989967ce8e"]
   subnet_id              = module.vpc.module_public_subnets[0]
   key_name               = "key_isaque"
   volume_size_root       = "10"
@@ -104,7 +104,7 @@ module "ec2-public-b" {
   infra_env              = "staging"
   instance_type          = "t2.micro"
   monitoring             = true
-  vpc_security_group_ids = ["sg-0127ecaa29e9498b6"]
+  vpc_security_group_ids = ["sg-021ad31989967ce8e"]
   subnet_id              = module.vpc.module_public_subnets[1]
   key_name               = "key_isaque"
   volume_size_root       = "10"
@@ -120,7 +120,7 @@ module "ec2-public-c" {
   infra_env              = "staging"
   instance_type          = "t2.micro"
   monitoring             = true
-  vpc_security_group_ids = ["sg-0127ecaa29e9498b6"]
+  vpc_security_group_ids = ["sg-021ad31989967ce8e"]
   subnet_id              = module.vpc.module_public_subnets[2]
   key_name               = "key_isaque"
   volume_size_root       = "10"
