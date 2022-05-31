@@ -5,10 +5,10 @@
 # Infraestrutura
 
 ## VPC
-- Pensando em alta disponibilidade, escalabilidade e redundância, criei uma vpc com 6 subnets sendo 3 publicas e 3 privadas, uma em cada AZ da AWS, pensando na segurança do ambiente e nas melhores práticas, para as subnets públicas foi criado um internet gateway, e para as vpc privadas foi criado um nat gateway, utilizando um Module Community do terraform.
+- Pensando em alta disponibilidade, escalabilidade e redundância, criei uma vpc com 6 subnets sendo 3 publicas e 3 privadas, uma em cada AZ da AWS, pensando na segurança do ambiente e nas melhores práticas, para as subnets públicas foi criado um internet gateway, e para as subnets privadas foi criado um nat gateway, utilizando um Module Community do terraform.
 
 ## EC2
-- Criei um módulo padrão para as ec2 "terraform/modules/ec2/", assim podendo trabalhar com mais facilidade e flexibilidade no arquivo main.tf, trabalhando com as váriaveis de ambiente, a intenção foi ter autonomia para lançar máquinas em qualquer AZ pública ou privada atraves do módulo.
+- Criei um módulo padrão para as ec2 "terraform/modules/ec2/", assim podendo trabalhar com mais facilidade e flexibilidade no arquivo main.tf trabalhando com as váriaveis de ambiente, a intenção foi ter autonomia para lançar máquinas em qualquer AZ pública ou privada atraves do módulo.
 
 ## DYNAMODB
 - Foi usado uma table do dynamodb para fazer um lock no state do terraform nos momentos de uso para não gerar conflitos em um ambiente com vários colaboradores.
