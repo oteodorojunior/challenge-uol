@@ -23,6 +23,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
+
 module "vpc" {
   source          = "./modules/vpc"
   infra_env       = "staging"
